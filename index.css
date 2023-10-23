@@ -876,51 +876,6 @@ aside{
 
 }
 
-/* Music Player Controls Section Styles for iPhone 12 and Responsive Design */
-/* Adjust the middle part of the music controls to be horizontal */
-/* Music Player Styles for iPhone 12 */
-/* Music Player Controls Section Style */
-/* @media screen and (max-width: 428px) {
-    #player-controls {
-        padding: 5px 0;
-    }
-
-    #left img {
-        height: 2.5rem;
-        width: 2.5rem;
-    }
-
-    #mid {
-        width: 45%;
-    }
-
-    #Play {
-        font-size: 1.6rem;
-    }
-
-    #player-controls h2 {
-        font-size: 0.8rem;
-    }
-
-    #player-controls p {
-        font-size: 0.7rem;
-    }
-
-    #top {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #bottom {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #right {
-        width: 40%;
-    }
-} */
-
 /* Queue Section */
 /* Increase the width of the queue container */
 
