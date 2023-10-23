@@ -893,6 +893,10 @@ aside{
         width: 100%;
         height: auto;
     }
+    
+    #player-controls{
+        width: 100vw;
+    }
 }
 
 /* Latest Hindi And Latest English */
