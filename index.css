@@ -876,7 +876,7 @@ aside{
 
 }
 
-/* Music Player Styles for iPhone 12 */
+/* Music Player Controls Section Styles for iPhone 12 and Responsive Design */
 
 /* Music Player Controls Section Style */
 @media screen and (max-width: 428px) {
@@ -890,7 +890,10 @@ aside{
     }
 
     #mid {
-        width: 45%;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     #Play {
@@ -906,17 +909,19 @@ aside{
     }
 
     #top {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     #bottom {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     #right {
-        width: 40%;
+        display: none; /* Hide the right side controls for small screens */
     }
 }
 
@@ -937,4 +942,5 @@ aside{
         font-size: 0.7rem;
     }
 }
+
 
