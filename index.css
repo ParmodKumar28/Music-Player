@@ -880,7 +880,7 @@ aside{
 /* Adjust the middle part of the music controls to be horizontal */
 /* Music Player Styles for iPhone 12 */
 /* Music Player Controls Section Style */
-@media screen and (max-width: 428px) {
+/* @media screen and (max-width: 428px) {
     #player-controls {
         padding: 5px 0;
     }
@@ -919,7 +919,7 @@ aside{
     #right {
         width: 40%;
     }
-}
+} */
 
 /* Queue Section */
 /* Increase the width of the queue container */
