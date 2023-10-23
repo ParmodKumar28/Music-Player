@@ -877,70 +877,109 @@ aside{
 }
 
 /* Music Player Controls Section Styles for iPhone 12 and Responsive Design */
+/* Adjust the right side controls to be more centered */
 
-/* Music Player Controls Section Style */
 @media screen and (max-width: 428px) {
-    #player-controls {
-        padding: 5px 0;
-    }
-
-    #left img {
-        height: 2.5rem;
-        width: 2.5rem;
-    }
-
-    #mid {
-        width: 70%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #Play {
-        font-size: 1.6rem;
-    }
-
-    #player-controls h2 {
-        font-size: 0.8rem;
-    }
-
-    #player-controls p {
-        font-size: 0.7rem;
-    }
-
-    #top {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #bottom {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     #right {
-        display: none; /* Hide the right side controls for small screens */
+        display: flex; /* Display the right side controls */
+        width: 30%; /* Adjust the width as needed */
+        justify-content: flex-end; /* Align controls to the right */
     }
 }
 
 /* Queue Section */
+/* Increase spacing and size for queue items */
+
 @media screen and (max-width: 428px) {
     .queue-item img {
-        height: 40px;
-        width: 40px;
+        height: 50px;
+        width: 50px;
         margin: 0 0.6rem;
     }
 
     .queue-item h3 {
-        font-size: 0.9rem;
-        margin-bottom: 4px;
+        font-size: 1rem;
+        margin-bottom: 6px;
     }
 
     .queue-item p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Stations Section */
+/* Make stations responsive and adjust spacing */
+
+@media screen and (max-width: 428px) {
+    #stations {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .main-image img {
+        height: 8rem;
+        width: 8rem;
+    }
+}
+
+/* Mood Section */
+/* Adjust the top three images to look better */
+
+@media screen and (max-width: 428px) {
+    .mood {
+        width: 45%; /* Adjust the width as needed */
+    }
+
+    .mood-1,
+    .mood-2,
+    .mood-3 {
+        background-size: 120%;
+    }
+}
+
+/* Latest Hindi And Latest English */
+/* Utilize space in the Hindi and English album containers */
+
+@media screen and (max-width: 428px) {
+    .album-box img {
+        height: 180px;
+        width: 180px;
+        margin: 10px;
+    }
+
+    .album-box p {
         font-size: 0.7rem;
     }
 }
+
+/* Navigation Bar for Mobile - Responsive Navbar */
+/* Create a responsive navigation bar for small screens */
+
+@media screen and (max-width: 428px) {
+    #NavBar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .list-1, .list-2 {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .list-2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .list-2 img {
+        margin: 0.5rem 0;
+    }
+
+    .list-2 #search {
+        width: 70vw;
+    }
+}
+
 
 
