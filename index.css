@@ -877,109 +877,50 @@ aside{
 }
 
 /* Music Player Controls Section Styles for iPhone 12 and Responsive Design */
-/* Adjust the right side controls to be more centered */
+/* Adjust the middle part of the music controls to be horizontal */
 
 @media screen and (max-width: 428px) {
-    #right {
-        display: flex; /* Display the right side controls */
-        width: 30%; /* Adjust the width as needed */
-        justify-content: flex-end; /* Align controls to the right */
+    #mid {
+        width: 100%;
+        flex-direction: row;
     }
 }
 
 /* Queue Section */
-/* Increase spacing and size for queue items */
+/* Increase the width of the queue container */
 
 @media screen and (max-width: 428px) {
-    .queue-item img {
-        height: 50px;
-        width: 50px;
-        margin: 0 0.6rem;
-    }
-
-    .queue-item h3 {
-        font-size: 1rem;
-        margin-bottom: 6px;
-    }
-
-    .queue-item p {
-        font-size: 0.8rem;
+    #queue-section {
+        width: 100%;
     }
 }
 
 /* Stations Section */
-/* Make stations responsive and adjust spacing */
+/* Increase the width of the stations container */
 
 @media screen and (max-width: 428px) {
     #stations {
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .main-image img {
-        height: 8rem;
-        width: 8rem;
-    }
-}
-
-/* Mood Section */
-/* Adjust the top three images to look better */
-
-@media screen and (max-width: 428px) {
-    .mood {
-        width: 45%; /* Adjust the width as needed */
-    }
-
-    .mood-1,
-    .mood-2,
-    .mood-3 {
-        background-size: 120%;
+        width: 100%;
     }
 }
 
 /* Latest Hindi And Latest English */
-/* Utilize space in the Hindi and English album containers */
+/* Display the album containers in a row for both Hindi and English */
+
+.album-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Mood Section */
+/* Ensure the top three images are displayed in a row */
 
 @media screen and (max-width: 428px) {
-    .album-box img {
-        height: 180px;
-        width: 180px;
-        margin: 10px;
-    }
-
-    .album-box p {
-        font-size: 0.7rem;
+    .mood {
+        width: 30%;
     }
 }
 
-/* Navigation Bar for Mobile - Responsive Navbar */
-/* Create a responsive navigation bar for small screens */
-
-@media screen and (max-width: 428px) {
-    #NavBar {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .list-1, .list-2 {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-
-    .list-2 {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .list-2 img {
-        margin: 0.5rem 0;
-    }
-
-    .list-2 #search {
-        width: 70vw;
-    }
-}
 
 
 
