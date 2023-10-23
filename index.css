@@ -901,6 +901,7 @@ aside{
 @media screen and (max-width: 428px) {
     #stations {
         width: 100%;
+        height: auto;
     }
 }
 
@@ -919,7 +920,30 @@ aside{
     .mood {
         width: 30%;
     }
+    #popular-artists-container {
+        justify-content: space-evenly;
+        width: 100vw;
+        height: 80vh;
+    }
+
+    .artist-box {
+        padding: 0.8rem; 
+        width: auto;
+        margin-bottom: 0.8rem; 
+    }
+
+    .artist-box img {
+        height: 100px; 
+        width: 100px; 
+        border-radius: 50%; 
+    }
+
+    .artist-box p {
+        font-size: 1rem;
+        padding-top: 1rem; 
+    }
 }
+
 
 
 
