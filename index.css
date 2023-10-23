@@ -1,0 +1,879 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: #0C1027;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+
+
+/* Variables*/
+:root{
+    --main-color: #FFFFFF;
+    --secondary-color:#A9A9A9;
+}
+/* -------------------------------------------- */
+
+/* Classes */
+.heading{
+    font-size: 1rem;
+    color: var(--main-color);
+}
+
+.mt-35{
+    margin-top: 3.5rem;
+}
+/* -------------------------------------------- */
+
+/* Navigation Bar */
+#NavBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+.nav>a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.nav li{
+    color: white;
+    text-decoration: none;
+}
+
+/* UL List-1 */
+.list-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+}
+
+.list-1 #logo{
+    height: 5rem;
+}
+
+.list-1>a{
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+/*  */
+
+
+/* UL List-2 */
+.list-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 32%;
+}
+.list-2 img{
+    height: 3.2rem;
+    border-radius: 50%;
+}
+
+.list-2 #bell{
+    font-size: 1.2rem;
+}
+
+.list-2 #search{
+    padding-left:2rem;
+    background: #12193E;
+    width: 20vw;
+    height: 2rem;
+    border-radius: 8px;
+    border: none;
+}
+
+.list-2 #Search-Icon{
+    position: relative;
+    left: 8%;
+}
+
+.list-2 #Microphone{
+    position: relative;
+    right: 8%;
+}
+
+/*  */
+
+/* Navigation Bar Media Screen Code */
+@media screen and (max-width:768px) {
+    #NavBar {
+        flex-direction: column;
+        text-align: center; 
+      }
+    
+      .list-1, .list-2 {
+        width: 100%; 
+        margin-bottom: 1rem; 
+      }
+
+    
+      .list-2 {
+        flex-direction: column; 
+        text-align: center; 
+      }
+    
+      .list-2 img {
+        margin: 0.5rem 0; 
+      }
+      .list-2 #search{
+        width: 70vw;
+    }
+}
+
+/* ---------------------------------------------- */
+
+main{
+    padding: 2.5rem;
+    width: 70%;
+    display: inline-block;
+}
+
+/* Main Media Screen Code */
+@media screen and (max-width:768px) {
+
+    main{
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .heading{
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+/* ---------------------------------------------- */
+
+/* Carosal Section */
+#carosal-container{
+    display: flex;
+    justify-content:space-between;
+}
+
+.image-container img{
+    width: 310px;
+    height: 310px;
+}
+
+/* Carosal Section Media Screen Code */
+@media screen and (max-width:768px) {
+    #carosal-container{
+        flex-wrap: wrap;
+    }
+    
+    .image-container img{
+        width: 143px;
+        height: 143px;
+    }
+}
+
+/* ---------------------------------------------- */
+
+
+/* Latest Release */
+#Latest-Release{
+    margin-top: 2.6rem;
+    color: var(--main-color);
+}
+
+#latest-release-container{
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.latest-release{
+    padding: 7px 20px 0 0;
+    display: flex;
+    justify-content:space-between;
+    width: 50%;
+}
+.latest-release img{
+    margin-right: 1rem;
+    height: 80px;
+    width: 80px;
+}
+
+.LR-image-title{
+    display: flex;
+    align-items: center;
+}
+
+.LR-title h3{
+    margin-bottom: 8px;
+}
+
+.latest-release h3{
+    font-size: 1rem;
+}
+.latest-release p{
+    color: var(--secondary-color);
+    font-size: 0.8rem;
+}
+
+/* Latest Release Media Screen Code */
+@media screen and (max-width:768px) {
+    .latest-release {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 10px 0; 
+    }
+
+    .latest-release img {
+        margin: 0 0 0.5rem 0;
+    }
+    .LR-title{
+        margin-left:8px;
+    }
+}
+
+/* ---------------------------------------------- */
+
+/* Popular Artists */
+#popular-artists-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.artist-box{
+padding: 2rem 0 2rem 0;
+}
+
+.artist-box p{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.artist-box img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 100%;
+}
+
+/* Popular Artists Media Screen Code */
+@media screen and (max-width:768px) {
+    #popular-artists-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 50vh;
+    }
+
+    .artist-box img{
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .artist-box p{
+        font-size: 0.8rem;
+        margin-top: 0.6rem;
+    }
+
+    .artist-box{
+        padding: 2rem;
+        }
+}
+
+/* ---------------------------------------------- */
+
+/* Stations Section */
+#stations{
+    margin: 2rem 0 2rem 0;
+    background-color: #12193E;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-image img{
+    height: 10rem;
+    width: 10rem;
+}
+
+.station-img img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.station-img{
+    position: relative;
+}
+
+.station-img p{
+    color: var(--main-color);
+    text-align: center;
+    position: absolute;
+    top: 38%;
+    left: 32%;
+    font-weight: bolder;
+}
+/*  */
+
+/* Stations Section Media Screen Code */
+@media screen and (max-width:768px) {
+    #stations{
+        margin: 2rem 0 3.5rem 0;
+        padding: 1rem 0;
+        flex-wrap: wrap;
+        height: 43vh;
+    }
+
+    .main-image img{
+        height: 8rem;
+        width: 8rem;
+    }
+}
+
+/* ---------------------------------------------- */
+
+/* Mood Section */
+#mood-container{
+    margin: 2rem 0 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mood{
+    height: 160px;
+    width: 32.1%;
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    position: relative; /* To create stacking context for rotation */
+    overflow: hidden; /* Hide overflow for rotated content */
+}
+
+.mood-1{
+    background-image: url(Assets/Moods/Mood1.jpg);
+    background-size: cover;
+    opacity: 0.6;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.mood-2{
+    background-image: url(Assets/Moods/Mood2.jpg);
+    background-size: cover;
+    opacity: 0.6;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.mood-3{
+    background-image: url(Assets/Moods/Mood3.jpg);
+    background-size: cover;
+    opacity: 0.6;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.mood:hover{
+    /* background-size: 120%; */
+    background-size: 120%;
+    /* transform: scale(1.2) rotate(10deg); Zoom and rotate on hover */
+    opacity: 0.8; /* Darken on hover */
+    filter: brightness(1.2); /* Increase brightness on hover */
+}
+
+/* Latest Hindi And Latest English */
+.Latest-Albums h2{
+    margin-bottom: 1.2rem;
+}
+.album-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.album-box img{
+    height: 150px;
+    width: 150px;
+}
+
+.album-box>p{
+    font-size: 1rem;
+    padding-bottom:6px;
+}
+
+.album-box p{
+    font-size: 0.8rem;
+}
+
+#hindi-container{
+    margin-bottom: 60px;
+}
+
+/* Latest Hindi And Latest English Media Screen Code */
+@media screen and (max-width:768px) {
+    .album-container{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .album-box img{
+        margin: 1rem;
+        height: 116px;
+        width: 116px;
+    }
+    .album-box p{
+        font-size: 0.7rem;
+    }
+    #hindi-container{
+        margin-bottom: 20px;
+    }
+}
+
+/* ---------------------------------------------- */
+
+/* Queue Section */
+
+aside{
+    width: 25%;
+    display: inline-block;
+    position: absolute;
+}
+#top-queue{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 2rem 0;
+}
+
+#list{
+    font-size: 1rem;
+    color: lightgreen;
+}
+
+.q-heading{
+    font-size: 1.6rem;
+}
+
+
+#queue-section{
+    color: var(--main-color);
+}
+
+#queue-section p{
+    color: var(--secondary-color);
+}
+
+.icon{
+    color: var(--secondary-color);
+}
+
+.queue-item{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 2.6rem 0 2.6rem 0;
+}
+
+.queue-item img{
+    height: 50px;
+    width: 50px;
+    border-radius: 6px;
+    margin: 0 0.8rem 0 0.8rem;
+    box-shadow: 0px 0px 8px #888888;
+}
+
+.queue-item h3{
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.queue-item p{
+    font-size: 0.8rem;
+}
+
+.image-text{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Queue Section Media Screen Code */
+@media screen and (max-width:768px) {
+    aside{
+        width: 100%;
+        display: block;
+        position: static;
+    }
+    #queue-section{
+        padding: 0 2rem;
+        padding-bottom: 6rem;
+    } 
+}
+
+/* ---------------------------------------------- */
+
+/* Music Player Controls Section Style */
+#player-controls{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    color: var(--main-color);
+    /* background:linear-gradient(120deg,red ,blue); */
+    background: linear-gradient(60deg, rgba(255, 0, 0, 0.2), rgba(0, 0, 255, 0.6));
+    backdrop-filter: blur(20px);
+    /* background-color: #282828; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+#player-controls div{
+    margin-right: 1rem;
+}
+
+#player-controls h2{
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+#player-controls p{
+    font-size: 0.8rem;
+}
+
+#left{
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+#left img{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+#mid{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+#mid div{
+    margin: 0 1rem;
+}
+
+#Play{
+    font-size: 2rem;
+}
+
+#top{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+#bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+#right{
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+/*  */
+
+/* Music Player Controls Media Screen Code */
+@media screen and (max-width:768px) {
+    
+    #player-controls div{
+        margin-right: 0.8rem;
+    }
+    
+    #player-controls h2{
+        font-size: 0.6rem;
+        margin-bottom: 6px;
+    }
+    
+    #player-controls p{
+        font-size: 0.6rem;
+    }
+    
+    #left img{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    
+    #mid{
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        margin: 0 1rem;
+    }
+    
+    #mid div{
+        margin: 0 0.6rem;
+    }
+}
+
+/* ---------------------------------------------- */
+
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .list-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 45%; 
+    }
+
+    .list-2 img {
+        height: 3.2rem;
+        border-radius: 50%;
+    }
+
+    .list-2 #search {
+        padding: 0.5rem 2rem; 
+        background: #12193E;
+        width: 60%; 
+        height: 2rem;
+        border-radius: 8px;
+        border: none;
+    }
+
+    .list-2 #Search-Icon {
+        position: relative;
+        left: 8%;
+    }
+
+    .list-2 #Microphone {
+        position: relative;
+        right: 8%;
+    }
+
+    /* Main Content */
+    main {
+        padding: 2.5rem;
+        width: 100%;
+    }
+
+    .heading {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+        /* Carosal Section */
+        #carosal-container {
+            flex-wrap: wrap;
+        }
+    
+        .image-container img {
+            width: 200px; /* Increase the image size as needed */
+            height: 200px; /* Increase the image size as needed */
+        }
+
+            /* Popular Artists */
+    #popular-artists-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+    }
+
+    .artist-box {
+        padding: 1rem; 
+        width: 48%; 
+        margin-bottom: 2rem; 
+    }
+
+    .artist-box img {
+        height: 150px; 
+        width: 150px; 
+        border-radius: 50%; 
+    }
+
+    .artist-box p {
+        font-size: 1rem;
+        padding-top: 1rem; 
+    }
+
+    /* Stations Section */
+    #stations {
+        margin: 2rem 0 3.5rem 0;
+        padding: 1rem 0;
+        flex-wrap: wrap;
+        height: 43vh;
+    }
+
+    .main-image img {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    /* Mood Section */
+    .mood {
+        width: 48%;
+        margin: 1%;
+    }
+
+    .mood-1,
+    .mood-2,
+    .mood-3 {
+        background-size: 120%;
+    }
+
+        /* Latest Hindi And Latest English */
+        .album-container {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+    
+        .album-box img {
+            margin: 1rem;
+            height: 150px;
+            width: 150px; 
+        }
+    
+        .album-box p {
+            font-size: 0.7rem;
+        }
+    
+        #hindi-container {
+            margin-bottom: 20px;
+        }
+
+    /* Queue Section */
+    aside {
+        width: 100%;
+        display: block;
+        position: static;
+    }
+
+    #queue-section {
+        padding: 0 2rem;
+        padding-bottom: 6rem;
+    }
+
+    /* Music Player Controls Section Style */
+    #player-controls div {
+        margin-right: 0.8rem;
+    }
+
+    #player-controls h2 {
+        font-size: 0.6rem;
+        margin-bottom: 6px;
+    }
+
+    #player-controls p {
+        font-size: 0.6rem;
+    }
+
+    #left img {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    #mid {
+        width: 35%;
+        margin: 0 1rem;
+    }
+
+    #mid div {
+        margin: 0 0.6rem;
+    }
+}
+
+/*...................................................................... */
+@media screen and (min-width: 1026px) and (max-width: 1430px) {
+
+    .list-2 {
+        width: 50%;
+    }
+
+    .list-2 #search {
+        width: 70%;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    .heading {
+        font-size: 1.2rem;
+    }
+
+    .image-container img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .artist-box {
+        width: 45%;
+    }
+
+    #stations {
+        height: 40vh;
+        padding: 1rem 0;
+    }
+
+    .main-image img {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .mood {
+        width: 45%;
+    }
+
+    .album-container {
+        margin-bottom: 20px; /* Add margin between Hindi and English albums */
+    }
+
+    .album-box img {
+        height: 180px;
+        width: 180px;
+        margin: 10px; /* Add margin between album images */
+    }
+
+    #queue-section {
+        padding-bottom: 4rem;
+    }
+
+    #player-controls h2 {
+        font-size: 0.8rem;
+    }
+
+    #player-controls p {
+        font-size: 0.8rem;
+    }
+
+    #left img {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    #mid {
+        width: 40%;
+    }
+
+    #mid div {
+        margin: 0 0.8rem;
+    }
+
+}
+
+
