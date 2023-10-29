@@ -531,7 +531,7 @@ aside{
     padding: 10px 0 10px 0;
     color: var(--main-color);
     /* background:linear-gradient(120deg,red ,blue); */
-    background: linear-gradient(60deg, rgba(255, 0, 0, 0.2), rgba(0, 0, 255, 0.6));
+    background: linear-gradient(60deg, rgba(255, 0, 0, 0.8), rgba(0, 0, 255, 0.6));
     backdrop-filter: blur(20px);
     /* background-color: #282828; */
     display: flex;
@@ -592,6 +592,11 @@ aside{
     display: flex;
     justify-content: flex-end;
     width: 30%;
+    display: flex;
+}
+
+#right>div{
+    display: flex;
 }
 
 /*  */
@@ -900,8 +905,6 @@ aside{
     #player-controls{
         width: 100vw;
         padding: 2px;
-        padding-left: 8px;
-        padding-right: 8px;
     }
 
     #player-controls i{
