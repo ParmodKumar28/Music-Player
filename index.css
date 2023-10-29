@@ -895,7 +895,7 @@ aside{
     }
 }
 
-/* Responsive CSS for iPhone 12 (width: 390px) */
+/* Responsive CSS for iPhone 12 (width: 428px) */
 @media only screen and (max-width: 428px) {
     #player-controls{
         width: 100vw;
