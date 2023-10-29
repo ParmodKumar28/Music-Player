@@ -888,6 +888,9 @@ aside{
     #queue-section {
         width: 100%;
     }
+    main{
+        padding: 0;
+    }
 }
 
 /* Stations Section */
